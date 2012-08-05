@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="20px"
+    android:paddingRight="20px" >
+
+    <TextView
+        android:id="@+id/textViewLoginLavel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/headerLogin"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:inputType="textNoSuggestions"
+            android:nextFocusDown="@+id/Password"
+            android:nextFocusUp="@+id/LoginButton" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <CheckBox
+            android:id="@+id/RememberLoginBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text=" Remember login"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/AutoLoginBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:checked="false"
+            android:enabled="false"
+            android:text=" Automatically Login"
+            android:textColor="#888888"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ButtonLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:nextFocusDown="@+id/Email"
+        android:nextFocusUp="@+id/RememberLoginBox"
+        android:text="Login"
+        android:textSize="20sp" >
+    </Button>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New To Virtual Friend ?"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/buttonRegistrationPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.19"
+        android:text="@string/TextViewInfo" />
+
+    <Button
+        android:id="@+id/buttonYourInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/profile" />
+
+</LinearLayout>

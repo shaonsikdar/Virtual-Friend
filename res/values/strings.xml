@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="hello">Hello World</string>
+    <string name="app_name">VirtualFriend</string>
+    <string name="HeaderLogin"></string>
+    <string name="headerLogin">Fill Email and Password</string>
+    <string name="email">Email</string>
+    <string name="info"></string>
+    <string name="profile">Info</string>
+    <string name="TextViewInfo">Here is your info...</string>
+</resources>
